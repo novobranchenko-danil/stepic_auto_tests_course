@@ -8,7 +8,7 @@ class TestUnittest(unittest.TestCase):
 
     def test_link1(self):
         try:
-            browser = webdriver.Firefox()
+            browser = webdriver.Chrome()
             link_1 = "http://suninjuly.github.io/registration1.html"
             browser.get(link_1)
             # Ищем и заполняем обязательные поля
@@ -31,10 +31,9 @@ class TestUnittest(unittest.TestCase):
                              "Something went wrong ")
         finally:
             browser.quit()
-
     def test_link2(self):
         try:
-            browser = webdriver.Firefox()
+            browser = webdriver.Chrome()
             link_2 = "http://suninjuly.github.io/registration2.html"
             browser.get(link_2)
             # Ищем и заполняем обязательные поля
